@@ -5,7 +5,7 @@ let secondNum = 0
 let counter = 0
 let answer = 0
 
-function calculate() {
+function calculate () {
   firstNum = document.getElementById('firstnumber').value
   secondNum = document.getElementById('secondnumber').value
   firstNum = parseInt(firstNum)
