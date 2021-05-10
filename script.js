@@ -11,9 +11,16 @@ function calculate () {
   firstNum = parseInt(firstNum)
   secondNum = parseInt(secondNum)
  
+ if (firstNum >= 0 && secondNum >= 0) {
   for (counter = 0; counter < firstNum; counter++)
   {
     answer = answer + secondNum
   }
   document.getElementById('answer').innerHTML = (answer)
+ } else if (firstNum >= 0 && secondNum < 0) {
+   for (counter = 0; counter < firstNum; counter++)
+    answer = answer + secondNum
+    document.getElementById('answer').innerHTML = (answer)
+ } 
+  
 }
