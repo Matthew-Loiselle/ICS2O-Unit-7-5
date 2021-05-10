@@ -5,7 +5,7 @@ let secondNum = 0
 let counter = 0
 let answer = 0
 
-function calculate () {
+function calculate() {
   firstNum = document.getElementById('firstnumber').value
   secondNum = document.getElementById('secondnumber').value
   firstNum = parseInt(firstNum)
@@ -15,12 +15,12 @@ function calculate () {
     for (counter = 0; counter < firstNum; counter++) {
       answer = answer + secondNum
     }
-    document.getElementById('answer').innerHTML = (answer)
+    document.getElementById('answer').value = (answer)
   } else {
     for (counter = 0; counter > firstNum; counter--) {
       answer = answer - secondNum
     }
-    document.getElementById('answer').innerHTML = (answer)
+    document.getElementById('answer').value = (answer)
   }
   answer = 0
 }
